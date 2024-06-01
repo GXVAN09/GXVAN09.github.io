@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+    <div class="menu">
+        <button onclick="show('add_tovar')">додати товар</button>
+    </div>
+    <div class="add_tovar" id="add_tovar">
+        <div class="form">
+            <h3 align="center">Додаваня <button onclick="hide('add_tovar')">x</button></h3>
+    <label for="">Назва товару</label><br>
+    <input type="text" class="infy_tovar" id="tovar_name"><br>
+
+    <br><label for="">Ціна товару</label><br>
+    <input type="number" class="infy_tovar" id="tovar_price"><br>
+
+    <br><label for="">Вага товару</label><br>
+    <input type="text" class="infy_tovar" id="tovar_weight">
+
+    <br><br><label for="">Посилання на картину</label><br>
+    <input type="text" class="infy_tovar" id="image_url">
+
+    <br><br><label for="">Наявність</label><br>
+    <input type="checkbox" class="infy_tovar" id="availability">
+
+    <br><br><label for="">Бенчмарк рейтинг</label><br>
+    <input type="number" class="infy_tovar" id="bench_rating"><br>
+    <br>
+
+    <br><br><label for="">Опис товару</label><br><br>
+    <textarea name="" id="description" cols="20" rows="10">
+
+        </textarea>
+   
+        <label for="">Тип Товару</label><br>
+        <select name="" id="type">
+            <option value="mouse">Мишки</option>
+            <option value="keyboard">Клавіатури</option>
+            <option value="gpu">Відеокарти</option>
+            <option value="motherboard">Мат Плати</option>
+            <option value="cpu">Процессори</option>
+            <option value="ram">Оперативна память</option>
+            <option value="blok_power">БП</option>
+            <option value="state_drives">Накопичювачі</option>
+        </select>
+    <label for="">Виробник</label><br>
+    <select name="" id="Developer">
+        <option value="hyper_x">Hyper X</option>
+        <option value="razer">Razer</option>
+        <option value="intel">Intel</option>
+        <option value="amd">Amd</option>
+        <option value="nvidia">NVidia</option>
+        <option value="msi">Msi</option>
+    </select>
+
+    <br>
+    <button onclick="add_tovar_fb()">додати товар</button>
+    <button onclick="hide('add_tovar')">Зарити</button>
+    </div>
+ </div>
+ 
+    <div class="all_tovars">
+        <table>
+            <thead>
+                <tbody>
+                  <tr>
+                    <th>№</th>
+                    <th>Назва</th>
+                    <th>Опис</th>
+                    <th>Тип товару</th>
+                    <th>Виробник</th>
+                    <th>Масса</th>
+                    <th>Ціна</th>
+                    <th>Наявність</th>
+                    <th>Бенчмарк рейтинг</th>
+                    <th>Url картинки</th>
+                    <th>Редагування товару</th>
+                    <th>Виадлення товару</th>
+                  </tr>  
+                </tbody>
+            </thead>
+            <tbody id="output_tovar">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="edit_tovar" id="edit_tovar">
+        <div class="form">
+            <h3 align="center">Редагування <button onclick="hide('edit_tovar')">x</button></h3>
+    <label for="">Назва товару</label><br>
+    <input type="text" class="infy_tovar" id="tovar_name_edit"><br>
+
+    <br><label for="">Ціна товару</label><br>
+    <input type="number" class="infy_tovar" id="tovar_price_edit"><br>
+
+    <br><label for="">Вага товару</label><br>
+    <input type="text" class="infy_tovar" id="tovar_weight_edit">
+
+    <br><br><label for="">Посилання на картину</label><br>
+    <input type="text" class="infy_tovar" id="image_url_edit">
+
+    <br><br><label for="">Наявність</label><br>
+    <input type="checkbox" class="infy_tovar" id="availability_edit">
+
+    <br><br><label for="">Бенчмарк рейтинг</label><br>
+    <input type="number" class="infy_tovar" id="bench_rating_edit"><br>
+    <br>
+
+    <br><br><label for="">Опис товару</label><br><br>
+    <textarea name="" id="description_edit" cols="20" rows="10">
+
+        </textarea>
+   
+        <label for="">Тип Товару</label><br>
+        <select name="" id="type_edit">
+            <option value="mouse">Мишки</option>
+            <option value="keyboard">Клавіатури</option>
+            <option value="gpu">Відеокарти</option>
+            <option value="motherboard">Мат Плати</option>
+            <option value="cpu">Процессори</option>
+            <option value="ram">Оперативна память</option>
+            <option value="blok_power">БП</option>
+            <option value="state_drives">Накопичювачі</option>
+        </select>
+    <label for="">Виробник</label><br>
+    <select name="" id="Developer_edit">
+        <option value="hyper_x">Hyper X</option>
+        <option value="razer">Razer</option>
+        <option value="intel">Intel</option>
+        <option value="amd">Amd</option>
+        <option value="nvidia">NVidia</option>
+        <option value="msi">Msi</option>
+    </select>
+
+    <br>
+    <button id="saving" onclick="hide('edit_tovar')">Зберегти зміни</button>
+    <button onclick="hide('edit_tovar')">Зарити</button>
+    </div>
+ </div>
+ 
+    </div>
+    
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="../firebase/config.js"></script>
+    <script src="../scripts/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.menu{
+    width: 80%;
+    margin-left: 10%;
+    height: 70px;
+    background-image: url(https://i.ebayimg.com/images/g/dgcAAOSwx75kPtDQ/s-l1200.webp);
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-size: cover;
+}
+.menu_button{
+    width: 9%;
+    height: 140px;
+    background: linear-gradient(to right,rgb(255, 77, 0) 50%, rgb(0, 0, 255) 50%);
+    transition: all 0.3s ease-in-out;
+    background-size: 200%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.menu_button:hover{
+    background-position: -100% 20%;
+}

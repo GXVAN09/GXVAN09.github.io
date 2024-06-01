@@ -1,0 +1,228 @@
+.menu{
+    width: 90%;
+    height: 90px;
+    box-shadow: 0px 0px 0px 3px black inset;
+    margin-left: 5%;
+    background-color: rgb(21, 182, 0);
+    position: fixed;
+    text-decoration: none;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter{
+    width: 25%;
+    height: 400px;
+    box-shadow: 0px 0px 0px 3px rgb(0, 60, 255) inset;
+    position: fixed;
+    float:left;
+    margin: 1.25%;
+    top: 100px;
+}
+.tovars{
+    width: 70%;
+    height: 11100px;
+    box-shadow: 0px 0px 0px 3px rgb(0, 60, 255) inset;
+    float:right;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    /*background: url('https://w7.pngwing.com/pngs/729/969/png-transparent-man-laptop-work-thumbnail.png');*/
+    width: 100vw;
+    height: 100vh;
+}
+.right_buttons{
+    margin-left: 80%;
+    background-color: rgb(0, 115, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.menu_button{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.2s;
+}
+.left_buttons{
+    transform: scale(120%)
+}
+.tovar{
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 5px;
+    height: 450px;
+    width: 300px;
+    margin: 1%;
+    box-shadow: 0px 0px 0px black;
+    transition: 0.2s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tovar:hover{
+    box-shadow: 0px 0px 5px black;
+    display: block;
+    .pidmenushka{
+        display: block;
+    }
+}
+.price{
+    margin-top: 5%;
+    font-size: 30px;
+}
+.developer{
+    margin-top: 5%;
+    font-size: 20px;
+}
+.nazva{
+    font-size: 30px;
+}
+.kartinka{
+    margin: 10%;
+}
+.pidmenushka{
+    font-size: 25px;
+    display: none;
+    margin-top: 13%;
+    border: 1px solid rgb(193, 193, 193);
+    box-shadow: 0px 0px 5px black;
+}
+.opis{
+    font-size: 20px;
+}
+.buy{
+    background-color: rgb(0, 128, 255);
+    color: white;
+    border-radius: 5px;
+}
+.svga{
+    width:40px ;
+}
+.svgk{
+    width:40px ;
+}
+.svgp{
+    width:40px ;
+}
+.svgl{
+    width:40px ;
+}
+
+
+
+.wrapper{
+    margin: 3.5% 3.5%;
+    position: relative;
+    width: 93%;
+    border-radius: 10px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 7.5px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 87.5%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+.slider-track{
+    width: 80%;
+    height: 5px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 5px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: #3264fe;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: #ffffff;
+    border: 3px solid #3264fe;
+}
+.values{
+    background-color: #3264fe;
+    width: 40%;
+    position: relative;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: #ffffff;
+}
+.values:before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15px solid #3264fe;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    margin: auto;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+}
+.foto_tovaru{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+

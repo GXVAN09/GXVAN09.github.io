@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+   <div class="menu">
+    <div class="left_buttons">
+        <a href="" class="menu_button">Головна</a>
+        <a href="" class="menu_button"></a>
+        </div>
+    <div class="right_buttons">
+        <a href="" class="menu_button"><img src="korzina.svg" class="svgk"></a>
+        <a href="" class="menu_button"><img src="profile.svg" class="svgp"></a>
+        <a href="" class="menu_button"><img src="login.svg" class="svgl"></a>
+        <a href="" class="menu_button"><img src="admin.svg" class="svga"></a>
+    </div>
+    
+        
+    </div>
+    </div>
+   <div class="filter">
+    <label for="">Назва товару</label><br>
+    <input type="text" id="filter_name"><br><br>
+   
+    <label for="">Тип товару</label><br>
+    <select name="" id="filter_type" class="form-select" aria-label="Default select example">
+        <option value=""></option>
+        <option value="mouse">Мишка</option>
+        <option value="keyboard">Клавіатура</option>
+        <option value="gpu">Відеокарта</option>
+        <option value="motherboard">Мат Плата</option>
+        <option value="cpu">Процессор</option>
+        <option value="ram">Оперативна Память</option>
+        <option value="blok_power">Блок Живлення</option>
+        <option value="state_drives">Накопичювач</option>
+    </select>
+    <br><br>
+   
+    <div class="wrapper">
+        <div class="values">
+            <h5>Ціна</h5>
+            <span id="range1">
+                0
+            </span>
+            <span> &dash; </span>
+            <span id="range2">
+                100
+            </span>
+        </div>
+    <div class="container">
+        <div class="slider-track"></div>
+            <input type="range" min="0" max="250000" value="0" id="slider-1" oninput="slideOne()">
+            <input type="range" min="0" max="250000" value="250000" id="slider-2" oninput="slideTwo()">
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-secondary" onclick="clearFilter()">скинути фільтр</button>
+    <button type="button" class="btn btn-primary" onclick="saveFilter()">застосувати фільтр</button>
+
+   </div>
+   <div class="tovars" id="all_tovars">
+    <div class="tovar">
+        <div class="kartinka"><img src="https://i.eldorado.ua//240x220//goods_images/1813298/14873e52be91c9ecbafa464f511ffd43.jpg" alt="" class="foto_tovaru"></div>
+        <div class="availablity" align="center">Є в наявності</div>
+        <div class="nazva" align="center">Ноут</div>
+        <div class="developer" align="center">Acer</div>
+        <div class="price" align="center">10000000 грн</div>
+        <div class="pidmenushka">
+            <div class="buy" align="center"><img src="buy.svg" alt="">Додати у кошик<img src="buy.svg" alt=""></div>
+            <div class="opis">Це опис товару</div>
+        </div>
+   </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+    <script src="firebase/config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
